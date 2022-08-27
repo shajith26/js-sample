@@ -41,7 +41,7 @@ for(let i=1; i<=10; i++){
 //for-in loop(object method)
 {
 	const person={
-		name: 'shajith',
+		name: "jamal"
 		age:22,
 		gender:'male'
 	}
