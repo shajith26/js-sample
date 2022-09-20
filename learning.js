@@ -259,17 +259,7 @@ let x;
 		}
 	}
 	
-	// print sum of given N numbers
-	{	
-		let sum=0;
-		let n=5;
-		function findsum(){
-				for(let i=1;i<=n;i++)
-			sum=sum+i;
-		return sum;
-		}
-		console.log(findsum(n));
-	}
+	
 	
 	// 
 	 
@@ -307,3 +297,37 @@ let x;
 	
 	let p="shajith";
 	console.log(p)
+	
+	// js string
+	
+	{
+		let firstname="anbu";
+		let lastname="selvan";
+		let para="this is my paragraph";
+		let message="this is my message ";
+		console.log(firstname +' '+ lastname)
+		console.log(firstname.length)
+		console.log(firstname.charAt(1))
+		console.log(firstname.concat(" ",lastname))
+		console.log(firstname.includes("an"))
+		console.log(firstname.includes("na"))
+		console.log(firstname.startsWith("an"))
+		console.log(firstname.endsWith("an"))
+		console.log(firstname.repeat(10))
+		console.log(firstname.replace("anbu","shajith"))
+		console.log(para.split(3))
+		console.log(para.substr(5))
+		console.log(message.trim())
+		console.log(firstname.bold())
+		
+		const stringObj = new String('foo');
+
+console.log(stringObj);
+
+console.log(stringObj.valueOf());
+
+		let a='reverse';
+		let b='REVERSE';
+		console.log(a.localeCompare(b))
+		console.log(a.localeCompare(a))
+	}
