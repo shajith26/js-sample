@@ -303,10 +303,10 @@ let x;
 	{
 		let firstname="anbu";
 		let lastname="selvan";
-		let para="this is my paragraph";
+		let para="this is my paragraph my";
 		let message="this is my message ";
 		console.log(firstname +' '+ lastname)
-		console.log(firstname.length)
+		console.log(lastname.length)
 		console.log(firstname.charAt(1))
 		console.log(firstname.concat(" ",lastname))
 		console.log(firstname.includes("an"))
@@ -319,15 +319,206 @@ let x;
 		console.log(para.substr(5))
 		console.log(message.trim())
 		console.log(firstname.bold())
-		
-		const stringObj = new String('foo');
-
-console.log(stringObj);
-
-console.log(stringObj.valueOf());
-
-		let a='reverse';
-		let b='REVERSE';
-		console.log(a.localeCompare(b))
-		console.log(a.localeCompare(a))
+		console.log(firstname.search('b'))
+		const stringObj = new String('shajith');
+        console.log(stringObj.valueOf());
+		let x="password";
+		console.log(x.padEnd(10,"*"))
 	}
+	
+	
+	//Given a number from 1 to 4 (inclusive),
+//	return a word representation of the number. 
+//For example, given 2, return two. 
+//If the number is greater than 4,
+// return the phrase too large. 
+//If the number is less than 1, 
+//return the phrase too small.
+	
+	{
+		let x=0;
+		
+		if(x>=1 && x<=4){			
+			switch (x){
+			case (1): console.log ('one');
+			break;
+			case (2): console.log ('two');
+			break;
+			case (3): console.log('three');
+			break;
+			case (4): console.log('four');
+			break;
+		}
+		}else if(x>4){
+			console.log("the phrase too large");
+		}else{
+			console.log("the pharse too small");
+		}
+	}
+	
+	
+	// find Nth number of given number
+	
+	{
+		let n=5;
+		function findsum (n){
+			let sum=0;
+			for (let i=1;i<=n;i++)
+				sum=sum+i;
+			return sum;
+		}
+		console.log(findsum(n));
+	}
+	
+	//reverse the given number in words
+	
+	{
+	const given=[1,2,3,0,9,5];
+		const reverse=given.reverse();
+		console.log(reverse)
+	
+	for(let i=0;i<reverse.length;i++){
+		switch(reverse[i]){
+				case 1:
+				console.log("one");
+				break;
+				case 2:
+				console.log("two");
+				break;
+				case 3:
+				console.log("three");
+				break;
+				case 4:
+				console.log("four");
+				break;
+				case 5:
+				console.log("five");
+				break;
+				case 6:
+				console.log("six");
+				break;
+				case 7:
+				console.log("seven");
+				break;
+				case 8:
+				console.log("eight");
+				break;
+				case 9:
+				console.log("nine");
+				break;
+				case 0:
+				console.log("zero");
+				break;
+			}
+		}
+	}
+	
+	// function ex
+	
+	{
+	function modulo(a,b){
+		return a+b;
+	}console.log(modulo(10,5))
+	}	
+	
+	// Write a program to Check whether a date is a weekend date or not
+	
+	{
+		let sat= 'Sat';
+		let sun='Sun';
+		let date = new Date();
+		console.log(date);
+		if(date.includes(sat) || date.includes(sun)){
+			console.log('it is a weekend date')
+		}else{
+			console.log('it is not a weekend date')
+		}
+	}
+	
+	/////// final draft
+	
+	{
+		
+		let day = new Date();
+	let x=day.getDay();
+	console.log(x);
+	
+	if((x==0) || (x==6)){
+		console.log('it is a weekend date')
+	}else{
+		console.log('it is not a weekend date')
+	}
+	
+	}
+	
+	
+	//////// sample
+	
+	{
+		
+		let de = new Date();
+	const s = de.setDate(21);
+	console.log(de);
+	
+	if(de.includes("Wed")==true){
+		console.log('it is not a weekend date')
+	}
+		
+		
+	}
+	
+	
+	let date = new Date();
+	const ss = date.getDate();
+	console.log(date);
+	
+	//date=Thu Sep 22 2022 15:45:02 GMT+0530 (India Standard Time)
+	
+console.log(date.includes("Thu"))
+
+
+//// Write a program to Check whether a date is a weekend date or not
+
+
+{
+	
+	let a=new Date();
+	 a.setDate(24);
+	  a.getDate();
+	  let b=a.getDay();
+	  
+	  
+	console.log(b)
+		
+		
+		
+	if((b==0)||(b==6)){
+		console.log("this is weekend")
+	}else{
+		console.log("not a weekend")
+	}
+	
+	
+	
+}
+
+{
+	let a=new Date();
+	 a.setMonth(4);
+	  a.getMonth();
+	  a.setDate(26);
+	  a.getDate();
+	  let b=a.getDay();
+	  
+	  
+	console.log(b)
+		
+		
+		
+	if((b==0)||(b==6)){
+		console.log("this is weekend")
+	}else{
+		console.log("not a weekend")
+	}
+	
+}
